@@ -10,11 +10,13 @@ async function loader() {
 }
 export default async function HomeRoute() {
   const data = await loader();
+  console.log(data);
+  
   return (
     <>
       <div>
-        <h1>{data.title}</h1>
-        <p>{data.Ddescription}</p>
+        <h1>{data.Title}</h1>
+        <p>{data.Description}</p>
       </div>
     </>
   );
