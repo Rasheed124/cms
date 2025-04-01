@@ -18,10 +18,10 @@ export function Footer({ data }: FooterProps) {
   const { logo, navigation, policies, copy } = data;
   return (
     <>
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-white text-black ">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
-            <div className="text-teal-600 dark:text-teal-300">
+            <div className="">
               <StrapiImage
                 src={logo.image.url}
                 alt={logo.image.alternativeText || "No alternative text"}
@@ -35,7 +35,7 @@ export function Footer({ data }: FooterProps) {
           
 
               <div className="">
-                <p className="font-medium text-gray-900 dark:text-white">
+                <p className="font-medium text-gray-900 ">
                   Services
                 </p>
 
@@ -43,7 +43,7 @@ export function Footer({ data }: FooterProps) {
                   {navigation.map((item) => (
                     <li key={item.id}>
                       <Link
-                        className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                        className="text-gray-700 transition hover:opacity-75 "
                         href={item.href}
                         target={item.isExternal ? "_blank" : "_self"}
                       >
@@ -56,9 +56,9 @@ export function Footer({ data }: FooterProps) {
             </div>
           </div>
 
-          <div className="mt-8 border-t border-gray-100 pt-8 dark:border-gray-800">
+          <div className="mt-8 border-t border-gray-100 pt-8 ">
             <div className="sm:flex sm:justify-between">
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+              <p className="text-xs text-gray-500 ">
               &copy; {new Date().getFullYear()} {copy}
               </p>
 
@@ -68,7 +68,7 @@ export function Footer({ data }: FooterProps) {
                     <Link
                       href={item.href}
                       target={item.isExternal ? "_blank" : "_self"}
-                      className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                      className="text-gray-500 transition hover:opacity-75 "
                     >
                       {item.text}
                     </Link>
