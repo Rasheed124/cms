@@ -16,7 +16,8 @@ export interface LinkProps {
     logoText: string;
     image: ImageProps;
   }
-  
+
+
   type ComponentType = "blocks.hero-section" | "blocks.info-block";
   
   interface Base<
@@ -52,3 +53,5 @@ export interface LinkProps {
     image: ImageProps;
     cta?: LinkProps;
   }
+
+
