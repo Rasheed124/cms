@@ -53,10 +53,11 @@ export function Subscribe({
                 </label>
 
                 <input
-                  type="emailemail"
+                  type="email"
                   name="email"
                   placeholder={errorMessage || successMessage || placeholder}
-                  className="w-full rounded-md border-gray-200 bg-white p-3 shadow-xs transition focus:border-white focus:ring-3 focus:ring-yellow-400 focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                   className={`w-full rounded-md border-gray-200 bg-white text-black p-3 shadow-xs transition focus:ring-0 focus:outline-hidden  ${errorMessage ? "border-red-600 text-red-600" : ""}`}
+               
                 />
               </div>
 
