@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# STRAPI
+/dist/
+
 # production
 /build
 
